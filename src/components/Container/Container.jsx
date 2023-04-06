@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import styles from './Container.module.css';
 
 export function Container({ bgColor, children }) {
