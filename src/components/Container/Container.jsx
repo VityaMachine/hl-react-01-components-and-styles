@@ -1,6 +1,8 @@
+import PropTypes from 'prop-types';
+
 import styles from './Container.module.css';
 
-export function Container({ bgColor, children }) {
+function Container({ bgColor, children }) {
   return (
     <div
       className={styles.container}
@@ -12,3 +14,10 @@ export function Container({ bgColor, children }) {
     </div>
   );
 }
+
+Container.propTypes = {
+  bgColor: PropTypes.string,
+  children: PropTypes.node.isRequired,
+};
+
+export default Container;
